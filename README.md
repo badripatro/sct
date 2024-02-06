@@ -1,4 +1,4 @@
-# Cosine Convolutional Neural Operator (sct) Hierarchical Model
+# Spectral Convolutional Transformer (SCT) Hierarchical Model
 
 ### Requirement:
 * PyTorch 1.10.0+
@@ -11,7 +11,7 @@
 
 
 
-### Train sct small model
+### Train SCT small model
 ```
 python3 -m torch.distributed.launch \
    --nproc_per_node=8 \
@@ -24,7 +24,7 @@ python3 -m torch.distributed.launch \
 ```
 
 
-### Train sct Base model
+### Train SCT Base model
 ```
 python3 -m torch.distributed.launch \
    --nproc_per_node=8 \
@@ -36,7 +36,7 @@ python3 -m torch.distributed.launch \
    --token-label --token-label-size 7 --token-label-data /export/home/dataset/imagenet/label_top5_train_nfnet
 ```
 
-### Train sct Large model
+### Train SCT Large model
 ```
 python3 -m torch.distributed.launch \
    --nproc_per_node=8 \
